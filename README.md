@@ -55,11 +55,10 @@ index.html
             </div>
             <button type="submit">Calculate Power</button>
         </form>
-
-        <div class="result" id="result"></div>
+             <div class="result" id="result"></div>
     </div>
 
-    <script>
+  <script>
         document.getElementById('power-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const intensity = parseFloat(document.getElementById('intensity').value);
@@ -71,7 +70,7 @@ index.html
     </script>
 </body>
 </html>
-style.css
+## SERVER SIDE PROCESSING:
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
