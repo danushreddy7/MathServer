@@ -32,108 +32,12 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
-index.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamp Filament Power Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Lamp Filament Power Calculator</h1>
-        <form id="power-form">
-            <div class="input-group">
-                <label for="intensity">Intensity (I in Amperes):</label>
-                <input type="number" id="intensity" name="intensity" step="0.01" required>
-            </div>
-            <div class="input-group">
-                <label for="resistance">Resistance (R in Ohms):</label>
-                <input type="number" id="resistance" name="resistance" step="0.01" required>
-            </div>
-            <button type="submit">Calculate Power</button>
-        </form>
-             <div class="result" id="result"></div>
-    </div>
+# index.html
+![image](https://github.com/user-attachments/assets/7f8c10c4-aeef-447b-9a4b-cf334b687ebf)
+# style.css
+![image](https://github.com/user-attachments/assets/7abdb71a-3c87-4171-8718-c94e93ce8c9d)
 
-  <script>
-        document.getElementById('power-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const intensity = parseFloat(document.getElementById('intensity').value);
-            const resistance = parseFloat(document.getElementById('resistance').value);
-            const power = Math.pow(intensity, 2) * resistance;
 
-            document.getElementById('result').innerText = "Power: " + power.toFixed(2) + " Watts";
-        });
-    </script>
-</body>
-</html>
-## SERVER SIDE PROCESSING:
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.input-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-.result {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #e9ecef;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 1.2em;
-    color: #333;
-}
 ## HOMEPAGE:
 ![image](https://github.com/user-attachments/assets/031673a8-ae0b-49b8-81a1-ce69eb97485c)
 
