@@ -1,4 +1,6 @@
 # Ex.05 Design a Website for Server Side Processing
+## REG NO: 212223040029
+# NAME:T DANUSH REDDY
 ## Date:
 
 ## AIM:
@@ -32,33 +34,9 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 align="center">Calculating Power of a Lamp</h1>
-    <form action="{% url 'Result' %}" method="post">
-        {% csrf_token %}
-       
-   <label for="">Intensity : </label>
-        <input type="text" name="intensity-input">
+![image](https://github.com/user-attachments/assets/0e854c4e-0cc6-4f25-bc47-a0f77de11448)
+![image](https://github.com/user-attachments/assets/c847b4ba-83cd-4bf8-921b-22e6f911a53a)
 
-   <br>
-
-   <label for="">Resistance : </label>
-        <input type="text" name="resistance-input">
-
-   <br>
-
-   <button type="submit">Calculate</button>
-
-   </form>  
-</body>
-</html>
 
 ## HOMEPAGE:
 ![image](https://github.com/user-attachments/assets/5f461b00-10df-46b5-b104-c73956897620)
